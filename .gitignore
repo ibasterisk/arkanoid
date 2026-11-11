@@ -1,0 +1,10 @@
+.env
+!.env.example
+.env.*
+*.log
+*.bak
+*.bak-*
+*.backup
+*.zip
+__pycache__/
+.DS_Store

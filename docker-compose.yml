@@ -1,0 +1,7 @@
+services:
+  arkanoid:
+    build: .
+    container_name: ibasterisk-arkanoid
+    restart: unless-stopped
+    ports:
+      - "${ARKANOID_PORT:-3088}:80"

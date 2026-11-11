@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090e1d">
+  <meta name="description" content="iBasterisk Retro Arkanoid – neonová hra s tehličkami, bonusmi a levelmi.">
+  <title>iBasterisk | RETRO ARKANOID</title>
+  <link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/game.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a class="brand" href="https://ibasterisk.eu" target="_blank" rel="noopener noreferrer" aria-label="iBasterisk Hub">i<span>BASTERISK</span><small>ARCADE</small></a>
+      <div class="top-controls">
+        <button class="mini" id="langBtn" title="Prepnúť jazyk">🇸🇰 SK</button>
+        <button class="mini" id="soundBtn" title="Sound on/off" aria-label="Sound on/off">♫ ON</button>
+      </div>
+    </header>
+    <section class="hero">
+      <p class="eyebrow" id="eyebrow">VLOŽ MINCU · HRÁČ JEDNA</p>
+      <h1>RETRO <span>ARKANOID</span></h1>
+      <p id="subtitle">Rozbi všetky tehličky. Zdolaj každý level.</p>
+    </section>
+    <section class="console" aria-label="Arkanoid game">
+      <div class="stats">
+        <div class="stat"><span id="scoreLabel">SKÓRE</span><strong id="score">000000</strong></div>
+        <div class="stat"><span id="levelLabel">LEVEL</span><strong id="level">01 / 08</strong></div>
+        <div class="stat"><span id="livesLabel">ŽIVOTY</span><strong id="lives">♥ ♥ ♥</strong></div>
+        <div class="stat"><span id="bestLabel">REKORD</span><strong id="best">000000</strong></div>
+      </div>
+      <div class="stage" id="stage">
+        <canvas id="game" width="800" height="560" aria-label="Arkanoid playing area"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="panel">
+            <p class="panel-tag" id="overlayTag">READY PLAYER ONE</p>
+            <h2 id="overlayTitle">ARKANOID</h2>
+            <p id="overlayText">Ovládaj plošinku a znič všetky tehličky.</p>
+            <button id="playBtn" class="primary">▶ ŠTART</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-controls">
+        <button id="pauseBtn" class="control">⏸ <span id="pauseLabel">PAUZA</span></button>
+        <span class="hint" id="controlsHint">Myš / ← → / A D / dotyk · Medzerník: štart / pauza</span>
+        <button id="restartBtn" class="control">↻ <span id="restartLabel">ZNOVU</span></button>
+      </div>
+      <div class="touch-controls" aria-label="Touch controls">
+        <button id="leftBtn" aria-label="Move paddle left">◀</button>
+        <button id="rightBtn" aria-label="Move paddle right">▶</button>
+      </div>
+    </section>
+    <footer><span>© iBasterisk · RETRO ARCADE</span><span id="footerHint">8 LEVELŮ · BONUSY · NEÓN</span></footer>
+  </main>
+</body>
+</html>
